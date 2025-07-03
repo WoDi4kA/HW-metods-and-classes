@@ -14,9 +14,13 @@ public class Main {
 
         System.out.println("TheGodFather.toString() = " + TheGodFather.toString());
 
-
         System.out.println(TheGodFather.equals(TheLittlePrince));
         TheLittlePrince.setBookTitle("The God Father");
         System.out.println(TheGodFather.equals(TheLittlePrince));
+
+        System.out.println("AntoineDeSaintExupery.equals(marioPuzo) = " + AntoineDeSaintExupery.equals(marioPuzo));
+        AntoineDeSaintExupery.setFirstName("Mario");
+        AntoineDeSaintExupery.setLastName("Puzo");
+        System.out.println("AntoineDeSaintExupery.equals(marioPuzo) = " + AntoineDeSaintExupery.equals(marioPuzo));
     }
 }
