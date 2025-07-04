@@ -12,9 +12,15 @@ public class Main {
         TheGodFather.setReleaseYear(1970);
         System.out.println("TheGodFather.getReleaseYear() = " + TheGodFather.getReleaseYear());
 
-        System.out.println("TheGodFather.getBookTitle() = " + TheGodFather.getBookTitle());
-        System.out.println("TheGodFather.getAuthor() = " + TheGodFather.getAuthor());
-        System.out.println("marioPuzo.getFirstName() = " + marioPuzo.getFirstName());
-        System.out.println("marioPuzo.getLastName() = " + marioPuzo.getLastName());
+        System.out.println("TheGodFather.toString() = " + TheGodFather.toString());
+
+        System.out.println(TheGodFather.equals(TheLittlePrince));
+        TheLittlePrince.setBookTitle("The God Father");
+        System.out.println(TheGodFather.equals(TheLittlePrince));
+
+        System.out.println("AntoineDeSaintExupery.equals(marioPuzo) = " + AntoineDeSaintExupery.equals(marioPuzo));
+        AntoineDeSaintExupery.setFirstName("Mario");
+        AntoineDeSaintExupery.setLastName("Puzo");
+        System.out.println("AntoineDeSaintExupery.equals(marioPuzo) = " + AntoineDeSaintExupery.equals(marioPuzo));
     }
 }
